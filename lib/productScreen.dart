@@ -6,14 +6,25 @@ class Productscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
             children: [
-              SizedBox(height: 20,),
-              Text("Menu"),
-              Center(child: ProductCard())
+              const SizedBox(height: 20,),
+              const Text("Menu", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+              SizedBox(
+                height: 600,
+                width: 400,
+                child: ListView.builder(
+                    itemCount: 5,
+                    itemBuilder: (index,context){
+                    return const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: ProductCard(),
+                    );
+                }),
+              )
 
             ],
           ),
