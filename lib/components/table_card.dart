@@ -5,6 +5,13 @@ class TableCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Container(
+        color: Colors.brown,
+        height: 100,
+        width: 100,
+      ),
+    );
   }
 }
