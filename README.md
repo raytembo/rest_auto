@@ -28,8 +28,6 @@ Welcome to the **Rest Auto**. This Flutter-based application automates restauran
 
 - Flutter SDK: ^2.0.0
 - Dart SDK: ^2.12.0
-- Android Studio / Visual Studio Code for development.
-- Any backend server (e.g., Firebase, Node.js) for data persistence.
 
 ### Dependencies
 
@@ -39,12 +37,5 @@ The following Flutter dependencies are required for this app:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.13.3
-  provider: ^6.0.0
-  firebase_core: ^1.4.0
-  firebase_auth: ^3.0.0
-  cloud_firestore: ^3.0.0
-  flutter_local_notifications: ^9.1.2
-  stripe_payment: ^1.0.9
-  # Add more packages as necessary
+  provider: ^6.0.2
 
