@@ -12,7 +12,7 @@ class TableCard extends StatelessWidget {
         color: Colors.yellow,
         height: 100,
         width: 100,
-        child: Text(tablenumber.toString()),
+        child: Center(child: Text(tablenumber.toString())),
       ),
     );
   }

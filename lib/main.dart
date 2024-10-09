@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rest_auto/table.dart';
+import 'package:rest_auto/components/nav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:TMS()
+      home:NavBar()
     );
   }
 }
