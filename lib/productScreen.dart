@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 import 'package:rest_auto/components/productcard.dart';
 
-class Productscreen extends StatelessWidget {
+class Productscreen extends StatefulWidget {
   const Productscreen({super.key});
+
+  @override
+  State<Productscreen> createState() => _ProductscreenState();
+}
+
+class _ProductscreenState extends State<Productscreen> {
+  // access to the products database
+  final productDb =Hive.box("productManagement");
+
+
 
   @override
   Widget build(BuildContext context) {
