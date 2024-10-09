@@ -13,7 +13,7 @@ class Productscreen extends StatelessWidget {
             children: [
               SizedBox(height: 20,),
               Text("Menu"),
-              ProductCard()
+              Center(child: ProductCard())
 
             ],
           ),
