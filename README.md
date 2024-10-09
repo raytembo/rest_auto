@@ -13,15 +13,13 @@ Welcome to the **Rest Auto**. This Flutter-based application automates restauran
      - *Gray*: Assigned to another waiter
    - Allows users to select a free table to proceed with orders..
   
-- **Admin Interface:**
-  - Manage restaurant menus: Add, update, and remove items.
-  - Track customer orders and update their status.
-  - Monitor feedback and reviews.
-  - Analytics on sales and performance.
+- **Order history Interface:**
+  - Show receipts
 
-- **Staff Interface:**
-  - View incoming orders and update status (e.g., preparing, ready for pickup).
-  - Notify customers when their order is ready.
+- **Product Interface:**
+  - Show Menu.
+  - Add to cart.
+  - Quantity multiplier.
 
 
 ## Requirements
