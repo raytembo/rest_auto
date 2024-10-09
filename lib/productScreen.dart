@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:rest_auto/components/productcard.dart';
 
 class Productscreen extends StatefulWidget {
@@ -10,10 +9,6 @@ class Productscreen extends StatefulWidget {
 }
 
 class _ProductscreenState extends State<Productscreen> {
-  // access to the products database
-  final productDb =Hive.box("productManagement");
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +30,23 @@ class _ProductscreenState extends State<Productscreen> {
                       child: ProductCard(),
                     );
                 }),
+              ),
+              Container(
+                color: Colors.transparent,
+                width: 300,
+                height: 400,
+                child: Column(
+                  children: [
+                    const Row(children: [
+                      Text("Total: ", style:TextStyle(fontWeight: FontWeight.bold, fontSize: 25),)
+                      ,Text("0.00",style:TextStyle(fontWeight: FontWeight.bold, fontSize: 25),)
+                    ],),
+                    ElevatedButton(
+                        onPressed: (){},
+                        child: const Text("Pay")
+                    )
+                  ],
+                ),
               )
 
             ],
